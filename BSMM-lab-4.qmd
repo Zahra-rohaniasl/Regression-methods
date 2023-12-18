@@ -1,0 +1,79 @@
+---
+title: "BSMM-lab-4"
+subtitle: "BSMM 8740 Fall 2023"
+author: "Add your name here"
+date: "Add the date here"
+format: html
+editor: visual
+self-contained: true
+---
+
+::: callout-note
+## REMINDER:
+
+Be sure to edit this document (see above) to include your name (and the date)
+:::
+
+## Setup
+
+Load packages and data:
+
+```{r load-pkg-data}
+#| message: false
+boston <- ISLR2::Boston
+```
+
+## Exercises
+
+### Exercise 1
+
+The intercept and the coefficient of `lstat` in this model are: intercept = \_\_; coefficient = \_\_
+
+### Exercise 2
+
+Are there any overly influential observations in this dataset?
+
+### Exercise 3
+
+Which predictors in this dataset might be redundant for predicting `medv`?
+
+### Exercise 4
+
+Which model returns the (approximately) correct dependence of demand on price, as given in the data generation process?
+
+lm(demand0 \~ price0) or lm(demand1 \~ price1) ?
+
+### Exercise 5
+
+After controling for the unobservable covariates, hich model now returns the (approximately) correct dependence of demand on price, as given in the data generation process?
+
+lm(demand0 \~ price0 + unobserved0) or lm(demand1 \~ price1 + unobserved1) ?
+
+What can you conclude from these exercises 4 and 5?
+
+### Exercise 6
+
+```{r}
+#| echo: true
+#| eval: false
+dat <- 
+  readxl::read_xlsx("data/2023 FE Guide for DOE-release dates before 7-28-2023.xlsx")
+```
+
+How many predictor variables are there in `cars_23` ?
+
+### Exercise 7
+
+After these two steps how many columns are in the data? Why does this differ from the last step?
+
+### Exercise 8
+
+The RMSE for the un-tuned model is \_\_.
+
+### Exercise 9
+
+Is the tuned model better than the un-tuned model? If better, how much has the RMSE improved (in %).
+
+### Exercise 10
+
+Per this model, what is the most important feature for predicting fuel efficiency?
